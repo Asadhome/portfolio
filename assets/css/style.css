@@ -65,7 +65,7 @@ a:hover{
 /* Dark Mode styles */
 [data-bs-theme="dark"] {
     --text-color: #fff;
-    --muted-text: #9a9a9a;
+    --muted-text: #fff;
     --bg-color: #212121;
     --btn-color: #fff;
     --offcanvas-bg: rgba(0,0,0,0.9);
@@ -243,6 +243,7 @@ button#switchTheme:hover{
 .section-heading{
     font-family: 'Dancing Script',var(--font-family);
     margin: 18px 0px;
+    color: var(--muted-text);
 }
 
 .cursor-not-allowed{
@@ -528,6 +529,7 @@ button#switchTheme:hover{
 #things-i-love .card-title {
     font-size: 18px;
     text-align: center;
+    color: var(--muted-text);
 }
 
 #things-i-love .card-text{
@@ -604,7 +606,7 @@ button#switchTheme:hover{
     padding: 30px 0 30px 0;
     color: var(--muted-text);
     font-size: 15px;
-    word-spacing: 5px;
+    word-spacing: 3px;
 }
 
     @media (max-width: 576px) {
