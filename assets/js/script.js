@@ -73,3 +73,16 @@ $(document).ready(function(){
         }
     });
 });
+
+$(document).ready(function() {
+	var $btns = $('.btn').click(function() {
+	  if (this.id == 'all') {
+	    $('#project-section > div').fadeIn(450);
+	  } else {
+	    var $el = $('.' + this.id).fadeIn(450);
+	    $('#project-section > div').not($el).hide();
+	  }
+	  $btns.removeClass('active');
+	  $(this).addClass('active');
+	})
+});
